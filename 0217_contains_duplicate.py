@@ -4,11 +4,11 @@
 # T: O(n)
 # S: O(n)
 class Solution:
-    def containsDuplicate(self, numbers_list: list[int]) -> bool:
-        numbers_set = set[int]()
-        for number in numbers_list:
-            if number in numbers_set:
+    def containsDuplicate(self, numbers: list[int]) -> bool:
+        numbersSet = set[int]()
+        for number in numbers:
+            if number in numbersSet:
                 return True
             else:
-                numbers_set.add(number)
+                numbersSet.add(number)
         return False
