@@ -1,8 +1,8 @@
 # https://leetcode.com/problems/valid-palindrome/
 
 
-# T: O(N)
-# S: O(N)
+# T: O(n)
+# S: O(n)
 class Solution:
     def isPalindrome(self, phrase: str) -> bool:
         filtered_phrase = list(filter(str.isalnum, phrase.lower()))

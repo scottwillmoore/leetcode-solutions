@@ -1,8 +1,8 @@
 # https://leetcode.com/problems/contains-duplicate/
 
 
-# T: O(N)
-# S: O(N)
+# T: O(n)
+# S: O(n)
 class Solution:
     def containsDuplicate(self, numbers_list: list[int]) -> bool:
         numbers_set = set[int]()
