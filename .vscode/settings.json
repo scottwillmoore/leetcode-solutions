@@ -1,0 +1,10 @@
+{
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.black-formatter"
+	},
+	"python.analysis.typeCheckingMode": "strict",
+	"files.readonlyInclude": {
+		".direnv/**": true,
+		"flake.lock": true
+	}
+}
