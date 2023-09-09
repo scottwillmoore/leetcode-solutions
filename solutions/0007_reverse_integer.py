@@ -3,7 +3,6 @@
 
 # T: O(n)
 # S: O(n)
-# NOTE: `n` is the number of digits in `x`.
 class Solution:
     def reverse(self, number: int) -> int:
         isNegative = number < 0

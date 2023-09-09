@@ -1,6 +1,10 @@
 # https://leetcode.com/problems/single-number/
 
 
+# type: ignore
+from collections import Counter
+
+
 # T: O(n)
 # S: O(1)
 class Solution:
@@ -15,16 +19,8 @@ class Solution:
 # S: O(n)
 # class Solution:
 #     def singleNumber(self, numbers: list[int]) -> int:
-#         counts: dict[int, int] = {}
-#
-#         for number in numbers:
-#             if number in counts:
-#                 counts[number] += 1
-#             else:
-#                 counts[number] = 1
-
-#         for number in counts:
-#             if counts[number] == 1:
+#         counter = Counter(numbers)
+#         for number in counter:
+#             if counter[number] == 1:
 #                 return number
-
 #         raise
