@@ -28,13 +28,20 @@
         systemsModule
       ];
 
-      perSystem = {packages, ...}: {
-        devShells.default = with packages;
-          mkShell {
-            buildInputs = [
-              python3
-            ];
-          };
+      perSystem = {packages, ...}: let
+        python3 = packages.python3.withPackages (pythonPackages: [
+          pythonPackages.aiodns
+          pythonPackages.aiohttp
+          pythonPackages.gql
+        ]);
+      in {
+        devShells.default = packages.mkShellNoCC {
+          packages = [
+            python3
+          ];
+        };
+
+        packages.python3 = python3;
       };
     };
 }
