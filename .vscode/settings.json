@@ -8,5 +8,5 @@
 		".direnv/**": true,
 		"flake.lock": true
 	},
-	"mypy-type-checker.importStrategy": "fromEnvironment"
+	"python.analysis.typeCheckingMode": "strict"
 }

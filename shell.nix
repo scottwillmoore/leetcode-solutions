@@ -9,7 +9,6 @@ in
         pythonPackages.aiohttp
         pythonPackages.black
         pythonPackages.gql
-        pythonPackages.mypy
       ]))
     ];
   }
