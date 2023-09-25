@@ -2,8 +2,8 @@
 	"recommendations": [
 		"mkhl.direnv",
 		"ms-python.black-formatter",
+		"ms-python.mypy-type-checker",
 		"ms-python.python",
-		"ms-python.vscode-pylance",
 		"streetsidesoftware.code-spell-checker"
 	]
 }

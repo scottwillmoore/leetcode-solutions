@@ -3,9 +3,10 @@
 		"editor.defaultFormatter": "ms-python.black-formatter"
 	},
 	"black-formatter.args": ["--line-length=100"],
-	"python.analysis.typeCheckingMode": "strict",
+	"black-formatter.importStrategy": "fromEnvironment",
 	"files.readonlyInclude": {
 		".direnv/**": true,
 		"flake.lock": true
-	}
+	},
+	"mypy-type-checker.importStrategy": "fromEnvironment"
 }
