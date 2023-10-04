@@ -13,6 +13,7 @@
               pythonPackages.aiodns
               pythonPackages.aiohttp
               pythonPackages.black
+              pythonPackages.click
               pythonPackages.gql
             ]))
           ];
